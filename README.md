@@ -5,7 +5,7 @@
 ## Ropach
 
 ### Description du projet :
-Ce projet a été réalisé dans le cadre d'un stage de 10 semaines entre le 14 avril 2025 et le 20 Juin 2025.
+Ce projet a été réalisé dans le cadre d'un stage de 10 semaines entre le 14 avril 2025 et le 20 Juin 2025 dans l'entreprise DAHST (holding des sociétés RPC et SER).
 
 En 2016, RPC a développé un logiciel de gestion des cantines scolaires appelé Ropach. Cette application permet d’automatiser et de faciliter la réservation des repas, le pointage des présences ainsi que la facturation des familles. Elle est utilisée par 180 clients et plus de 30 000 familles.
 
