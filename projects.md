@@ -3,7 +3,7 @@
 ## Ropach
 
 ### Description du projet :
-Ce projet a été réalisé dans le cadre d'un stage de 10 semaines entre le 14 avril 2025 et le 20 Juin 2025.
+Ce projet a été réalisé dans le cadre d'un stage de 10 semaines entre le 14 avril 2025 et le 20 Juin 2025 dans l'entreprise DAHST (holding des sociétés RPC et SER).
 
 En 2016, RPC a développé un logiciel de gestion des cantines scolaires appelé Ropach. Cette application permet d’automatiser et de faciliter la réservation des repas, le pointage des présences ainsi que la facturation des familles. Elle est utilisée par 180 clients et plus de 30 000 familles.
 
@@ -26,6 +26,7 @@ L’objectif du stage est de concevoir en partenariat avec le service informatiq
 
 - 1ère expérience professionelle
 - Découverte des frameworks Flutter et Laravel
+- Gain en autonomie
 
 
 
@@ -33,6 +34,11 @@ L’objectif du stage est de concevoir en partenariat avec le service informatiq
 ## EnseignantSup
 
 ### Description du projet :
+
+Un dossier Parcoursup est un dossier contenant toutes les informations sur un étudiant lorsqu’il postule dans un établissement d’études supérieures, dont ses notes, ses appréciations et sa lettre de motivation. Pour un professeur, evaluer les dossiers Parcoursup des étudiants est un processus qui peut être long et fastidieux pour les professeurs.
+
+L’objectif principal de ce projet était de créer une application permettant d’aider les professeurs à l’évaluation qualitative des dossiers Parcoursup, principalement en se basant sur une étude sur les statistiques du dossier tel que les occurrences de certains mots ou bien la longueur en nombre de mots de la lettre de motivation. Cet outil aurait pu également utiliser une IA pour attribuer les notes en fonction des scores des dossiers.
+
 
 ### Technologies utilisées
 
@@ -51,12 +57,15 @@ L’objectif du stage est de concevoir en partenariat avec le service informatiq
 
 - Développement de mes connaissances en Javascript
 - Découverte du framework Electron
+- Amélioration de mes capacités à travailler en équipe
 
 
 
 ## GASC : Gestion des activités Sportives et Culturelles
 
 ### Description du projet :
+
+L'IUT Lyon dispose d'un site web de gestion des activités sportives permettant aux étudiants de s'inscrire à des activités et aux professeurs de gérer les absences, donner des notes, etc.
 
 ### Technologies utilisées
 
@@ -73,11 +82,28 @@ L’objectif du stage est de concevoir en partenariat avec le service informatiq
 
 ### Compétences Acquises
 
+- Découverte d'API platform
+- Approfondissement de mes compétences en Symfony
 
 
 ## Festival de Cannes
 
 ### Description du projet :
+
+Le Festival de Cannes, créé en 1946, est un événement majeur du cinéma. Chaque année, pendant deux semaines du mois de mai, il rassemble des professionnels du monde entier. Organiser un tel événement nécessite une gestion précise.
+
+Une équipe a été chargée de développer une application séparée en 3 modules :
+
+- Module VIP : ce module avait pour objectif de faciliter la communication entre le staff du festival et les VIPs afin que leurs demandes puissent être satisfaites.
+
+- Module Hébergement : celui-ci devait permettre à des hébergeurs de lister leurs hébergements et services dans l'application. Ensuite les VIPs étaient assignés à un hébergement pour la durée de leur séjour.
+
+- Module Planning : enfin, celui-ci avait pour but de permettre aux membres du staff du festival de mettre en place un planning de séances de visionnage de films pour le festival.
+
+Cependant, l'application était très incomplète, avec des modules non-fonctionnels et des fonctionnalités manquantes.
+
+L'objectif de notre équipe était donc d'améliorer l'application existante, notamment en fusionnant les 3 modules en une seule application utilisant la ou les mêmes technologies.
+
 
 ### Technologies utilisées
 
@@ -92,3 +118,6 @@ L’objectif du stage est de concevoir en partenariat avec le service informatiq
 - Incorporation de SASS dans l'application web
 
 ### Compétences Acquises
+
+- Amélioration de mes compétences en Symfony
+- Amélioration de mes capacités à travailler en équipe
