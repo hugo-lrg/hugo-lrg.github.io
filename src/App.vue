@@ -12,7 +12,7 @@ import 'simple-icons-font/font/simple-icons.css'
 
         <main class="col-lg-4 col-md-12 py-lg-5 d-flex flex-column min-vh-lg-80">
           <div class="sticky-lg-top">
-            <p class="subtext fw-bold mb-1">COMPUTER SCIENCE STUDENT</p>
+            <p class="subtext fw-bold mb-1">IT STUDENT IN WEB DEVELOPMENT</p>
             <h1 class="display-4 fw-bold mb-4">Hugo <span class="text-white">LERGES</span></h1>
 
             <nav class="nav flex-column gap-3 mt-5 custom-nav">
@@ -24,8 +24,9 @@ import 'simple-icons-font/font/simple-icons.css'
           </div>
 
           <div class="mt-auto pt-5 social-links d-flex gap-4">
-            <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/hugo-lrg" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/hugo-lergès-b7b692349/" class="social-icon"><i
+                class="bi bi-linkedin"></i></a>
             <a href="#" class="social-icon"><i class="bi bi-envelope-at-fill"></i></a>
           </div>
         </main>
@@ -35,7 +36,7 @@ import 'simple-icons-font/font/simple-icons.css'
 
           <footer class="mt-5 pt-5 border-top border-secondary border-opacity-25 text-white-50 small">
             <div class="d-flex justify-content-between align-items-center">
-              <p class="mb-0">© 2026 — Hugo Lerges</p>
+              <p class="mb-0">© 2026 - Hugo Lerges</p>
               <div class="tech-stack-mini d-flex gap-3">
                 <i class="si si-symfony" title="Symfony"></i>
 

@@ -7,19 +7,20 @@
 
         <p class="lead-text mb-4">
             Actuellement étudiant en <strong>BUT Informatique</strong> à l'IUT Lyon 1,
-            je m'épanouis dans la création d'expériences numériques complètes et performantes.
+            j'apprends à développer des applications web complètes et intuitives.
         </p>
 
         <div class="description-text">
             <p>
-                Développeur <strong>web full-stack</strong>, je maîtrise des frameworks robustes comme
-                <span class="tech-tag">Symfony</span>, <span class="tech-tag">Laravel</span> et
-                <span class="tech-tag">Vue.js</span>.
+                Durant mes études de développement <strong>web full-stack</strong>, j'ai eu l'occasion d'utiliser des
+                frameworks robustes tels que <span class="tech-tag">Symfony</span>, <span
+                    class="tech-tag">Laravel</span> et <span class="tech-tag">Vue.js</span>.
             </p>
             <p>
-                Mon expertise s'étend également au <strong>développement mobile</strong> avec
-                <span class="tech-tag">Flutter</span>, une technologie que j'ai perfectionnée
-                lors de mon stage de deuxième année pour créer des applications multiplateformes intuitives.
+                Je possède également des compétences en <strong>développement mobile</strong> avec le framework
+                <span class="tech-tag">Flutter</span>, une technologie que j'ai pu apprendre
+                lors de mon stage de deuxième année pour créer une application multiplateforme
+                dans le cadre d'un stage de 10 semaines (voir Ropach dans la section Projets).
             </p>
         </div>
     </section>
