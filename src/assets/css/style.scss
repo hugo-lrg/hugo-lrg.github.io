@@ -1,1 +1,81 @@
-@import "{{ site.theme }}";
+// @import "{{ site.theme }}";
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: #4cc9f0;
+}
+
+.tracking-wider {
+    letter-spacing: 0.15em;
+}
+
+/* Texte principal plus grand et plus clair */
+.lead-text {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Texte secondaire avec une opacité maîtrisée */
+.description-text {
+    font-size: 1.05rem;
+    color: #adb5bd;
+    /* Un gris plus lisible que white-50 */
+    line-height: 1.8;
+}
+
+/* Mise en avant subtile des technologies */
+.tech-tag {
+    color: #e0e1dd;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(76, 201, 240, 0.3);
+}
+
+strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Animation d'entrée simple */
+.side-section {
+    animation: fadeIn 0.8s ease-out;
+    background: linear-gradient(rgba(0, 19, 11, 0.5), rgba(0, 37, 85, 0));
+    height: 50vh;
+    overflow: scroll;
+    scrollbar-width: auto; /* Rend la barre plus fine */
+    scrollbar-color: #4cc9f0 rgba(255, 255, 255, 0.05); /* Couleur du pouce et de la piste */
+
+    /* --- Style pour Chrome, Edge et Safari (Webkit) --- */
+    &::-webkit-scrollbar {
+        width: 6px; /* Largeur de la barre verticale */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.02); /* Fond de la barre (très discret) */
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(76, 201, 240, 0.3); /* Ta couleur turquoise avec de l'opacité */
+        border-radius: 10px;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: #4cc9f0; /* Devient opaque au survol */
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

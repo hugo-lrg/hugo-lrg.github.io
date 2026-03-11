@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import 'simple-icons-font/font/simple-icons.css'
 </script>
 <link rel="stylesheet" href="assets/css/style.scss">
 </link>
