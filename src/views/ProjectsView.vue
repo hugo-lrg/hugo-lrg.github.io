@@ -82,7 +82,7 @@ const toggleProject = (id: number) => {
                             </p>
 
                             <div class="d-flex flex-wrap gap-2">
-                                <span v-for="tech in project.techs" :key="tech" class="info-badge">
+                                <span v-for="tech in project.techs" :key="tech" class="badge info-badge">
                                     {{ tech }}
                                 </span>
                             </div>
