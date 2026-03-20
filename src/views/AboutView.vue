@@ -21,9 +21,8 @@
             </p>
             <p>
                 Je possède également des compétences en <strong>développement mobile</strong> avec le framework
-                <span class="tech-tag">Flutter</span>, une technologie que j'ai pu apprendre
-                lors de mon stage de deuxième année pour créer une application multiplateforme
-                dans le cadre d'un stage de 10 semaines (voir Ropach dans la section Projets).
+                <span class="tech-tag">Flutter</span>, une technologie que j'ai pu découvrir dans le cadre d'un stage de
+                10 semaines en 2ème année.
             </p>
         </div>
     </section>

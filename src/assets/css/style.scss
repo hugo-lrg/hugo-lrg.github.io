@@ -1,4 +1,6 @@
 // @import "{{ site.theme }}";
+@import 'fonts.scss';
+$accent: #4cc9f0;
 
 .line {
     width: 40px;
@@ -40,42 +42,215 @@ strong {
 
 /* Animation d'entrée simple */
 .side-section {
-    animation: fadeIn 0.8s ease-out;
-    background: linear-gradient(rgba(0, 19, 11, 0.5), rgba(0, 37, 85, 0));
-    height: 50vh;
-    overflow: scroll;
-    scrollbar-width: auto; /* Rend la barre plus fine */
-    scrollbar-color: #4cc9f0 rgba(255, 255, 255, 0.05); /* Couleur du pouce et de la piste */
+  animation: fadeIn 0.8s ease-out;
+  background: linear-gradient(rgba(0, 19, 11, 0.6), rgba(0, 37, 85, 0));
+  height: 50vh;
+  overflow-y: auto;
+  padding: 2rem;
 
-    /* --- Style pour Chrome, Edge et Safari (Webkit) --- */
-    &::-webkit-scrollbar {
-        width: 6px; /* Largeur de la barre verticale */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(76, 201, 240, 0.5) rgba(255, 255, 255, 0.05);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(76, 201, 240, 0.3);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #4cc9f0;
+    }
+  }
+}
+
+.experience-stack {
+  border-left: 2px dotted #246072;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  > div {
+    position: relative;
+    padding-left: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:hover {
+      transform: translateX(4px);
     }
 
-    &::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.02); /* Fond de la barre (très discret) */
-        border-radius: 10px;
+    .info-badge {
+      font-size: 0.7rem;
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: rgba($accent, 0.15);
+      color: $accent;
+      font-weight: 600;
+      margin-right: 0.5rem;
+      border: 1px solid rgba($accent, 0.2);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $accent;
+        color: #fff;
+      }
     }
 
-    &::-webkit-scrollbar-thumb {
-        background: rgba(76, 201, 240, 0.3); /* Ta couleur turquoise avec de l'opacité */
-        border-radius: 10px;
-        transition: background 0.3s ease;
+    .project-title-preview {
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      color: #e0e1dd;
+      transition: color 0.3s ease;
 
-        &:hover {
-            background: #4cc9f0; /* Devient opaque au survol */
-        }
+      &:hover {
+        color: #fff;
+      }
     }
+
+    .description-text {
+      font-size: 1rem;
+      color: #adb5bd;
+      line-height: 1.6;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: $accent;
+}
+
+.tracking-wider {
+  letter-spacing: 0.15em;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects-stack {
+    perspective: 1000px;
+}
+
+.project-container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(13, 27, 42, 0.3);
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: rgba($accent, 0.3);
+        transform: translateX(4px);
+    }
+}
+
+.project-trigger {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    /* On enlève justify-content-between car tout est à gauche maintenant */
+    justify-content: start;
+
+    &:hover {
+
+        /* On change l'effet de survol pour que la flèche bouge un peu */
+        .arrow-icon:not(.rotated) {
+            transform: translateX(3px);
+            color: $accent;
+        }
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    &.is-open {
+        background: rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+}
+
+.project-title-preview {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: #adb5bd;
+    transition: all 0.3s ease;
+}
+
+.is-open .project-title-preview {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.arrow-icon {
+    font-size: 1.1rem;
+    /* Un peu plus petit pour le chevron */
+    color: #778da9;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Rotation pour pointer vers le bas */
+    &.rotated {
+        transform: rotate(90deg);
+        color: $accent;
+    }
+}
+
+.card-inner {
+    padding: 1.5rem;
+}
+
+.inner-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    .hash {
+        opacity: 0.3;
+    }
+}
+
+.info-badge {
+    font-size: 0.65rem;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: rgba($accent, 0.1);
+    color: $accent;
+    border: 1px solid rgba($accent, 0.1);
+    font-weight: 600;
+}
+
+/* Animation fluide */
+.expand-enter-active,
+.expand-leave-active {
+    transition: all 0.4s ease-in-out;
+    max-height: 500px;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+    max-height: 0;
+    opacity: 0;
+}
+
+.name-card {
+  font-family: 'MajorMonoDisplay', monospace; /* Sans espaces, comme dans ton @font-face */
+}
+
+.social-icon {
+  font-size: x-large;
 }
