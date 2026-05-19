@@ -24,9 +24,9 @@ import '@/assets/css/style.scss' // Importation correcte via Vite
 
           <div class="mt-auto pt-5 social-links d-flex gap-4">
             <a href="https://github.com/hugo-lrg" class="social-icon text-white"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/hugo-lergès-b7b692349/" class="social-icon"><i
+            <a href="https://www.linkedin.com/in/hugo-lergès-b7b692349/" class="social-icon text-info"><i
                 class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-envelope-at-fill"></i></a>
+            <a href="#" class="social-icon text-danger"><i class="bi bi-envelope-at-fill"></i></a>
           </div>
         </main>
 

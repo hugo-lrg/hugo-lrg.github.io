@@ -257,3 +257,41 @@ strong {
 .social-icon {
   font-size: x-large;
 }
+
+
+
+
+
+
+.btn-project-outline {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $accent;
+  border: 1px solid rgba($accent, 0.3);
+  border-radius: 4px; // Dans le style de tes badges
+  background: rgba($accent, 0.02);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    background: rgba($accent, 0.12);
+    border-color: $accent;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba($accent, 0.2); // Léger effet néon/glow tech
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+
+
+
+
+  
+}

@@ -3,7 +3,15 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 
-const openProject = (id: number) => router.push(`/projets/${id}`)
+const openProject = (id: number) => {
+  const projectToOpen = projects.value.find(p => p.id === id)
+  
+  router.push({
+    name: 'project-details',
+    params: { id },
+    state: { project: JSON.parse(JSON.stringify(projectToOpen)) }
+  })
+}
 
 interface Project {
     id: number;
@@ -13,6 +21,7 @@ interface Project {
     techs: string[];
     tasks: string[];
     skills: string[];
+    gitLink: string
 }
 
 const projects = ref<Project[]>([
@@ -35,7 +44,8 @@ const projects = ref<Project[]>([
             "1ère expérience professionnelle",
             "Découverte des frameworks Flutter et Laravel",
             "Gain en autonomie"
-        ]
+        ],
+        gitLink: 'https://github.com/DAHSTfr/ropach_mobile'
     },
     {
         id: 2,
@@ -53,7 +63,8 @@ const projects = ref<Project[]>([
             "Développement de mes connaissances en Javascript",
             "Découverte du framework Electron",
             "Amélioration de mes capacités à travailler en équipe"
-        ]
+        ],
+        gitLink: 'https://iutbg-gitlab.iutbourg.univ-lyon1.fr/sae-but2/2024-25/evaluationdossierspsup'
     },
     {
         id: 3,
@@ -72,7 +83,8 @@ const projects = ref<Project[]>([
         skills: [
             "Découverte d'API Platform",
             "Approfondissement de mes compétences en Symfony"
-        ]
+        ],
+        gitLink: 'https://github.com/lbgasc01/gasc-symfony-with-api'
     },
     {
         id: 4,
@@ -91,11 +103,11 @@ const projects = ref<Project[]>([
         skills: [
             "Amélioration de mes compétences en Symfony",
             "Amélioration de mes capacités à travailler en équipe"
-        ]
+        ],
+        gitLink: ''
     }
 ]);
 
-// 3. Gestion de l'état (on stocke l'ID du projet ouvert)
 const activeProjectId = ref<number | null>(null);
 
 const toggleProject = (id: number) => {
@@ -134,13 +146,14 @@ const toggleProject = (id: number) => {
                             <p class="description-text mb-4">
                                 {{ project.description }}
                             </p>
-
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span v-for="tech in project.techs" :key="tech" class="badge info-badge">
-                                    {{ tech }}
-                                </span>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span v-for="tech in project.techs" :key="tech" class="badge info-badge">
+                                        {{ tech }}
+                                    </span>
+                                </div>
+                                <a @click="openProject(project.id)" class="btn-project-outline">Voir plus</a>
                             </div>
-                            <a @click="openProject(project.id)">Voir plus</a>
                         </div>
                     </div>
                 </transition>

@@ -29,8 +29,9 @@ const router = createRouter({
     },
     {
       path: '/projets/:id',
-      name: 'ProjectDetails',
-      component: () => import('@/views/ProjectDetailsView.vue')
+      name: 'project-details',
+      component: () => import('@/views/ProjectDetailsView.vue'),
+      props: true // Étape cruciale : permet de recevoir :id comme une prop
     }
   ]
 })

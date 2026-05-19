@@ -3,7 +3,7 @@
 const skillGroups = [
     { label: 'Avancé', skills: ['Symfony', 'Flutter'] },
     { label: 'Maîtrisé', skills: ['Javascript', 'Laravel'] },
-    { label: 'Notions', skills: ['Docker', 'Vue.js'] }
+    { label: 'Notions', skills: ['Docker', 'Vue.js', 'Kotlin Spring Boot'] }
 ];
 
 const languageGroups = [
